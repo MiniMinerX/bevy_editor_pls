@@ -10,6 +10,7 @@ use bevy::render::camera::CameraUpdateSystem;
 use bevy::transform::TransformSystem;
 use bevy::window::{PrimaryWindow, WindowRef};
 use bevy_inspector_egui::{
+    bevy_egui,
     bevy_egui::EguiPlugin,
     DefaultInspectorConfigPlugin,
 };
