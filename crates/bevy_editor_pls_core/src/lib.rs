@@ -10,7 +10,6 @@ use bevy::render::camera::CameraUpdateSystem;
 use bevy::transform::TransformSystem;
 use bevy::window::{PrimaryWindow, WindowRef};
 use bevy_inspector_egui::{
-    bevy_egui,
     bevy_egui::EguiPlugin,
     DefaultInspectorConfigPlugin,
 };
@@ -88,7 +87,7 @@ impl Plugin for EditorPlugin {
                     .in_set(EditorSet::UI)
                     .before(TransformSystem::TransformPropagate)
                     .before(CameraUpdateSystem)
-                    .before(bevy_egui::EguiPostUpdateSet::ProcessOutput),
+                    .before(bevy_inspector_egui::bevy_egui::EguiPostUpdateSet::ProcessOutput),
             );
     }
 }
