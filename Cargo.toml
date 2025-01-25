@@ -18,7 +18,7 @@ bevy_editor_pls_default_windows = { version = "0.11.0", path = "crates/bevy_edit
 bevy-inspector-egui = { branch = "space_edit", git = "https://github.com/MiniMinerX/bevy-inspector-egui.git"}
 egui = "0.30.0"
 egui_dock = "0.15"
-transform-gizmo-bevy = "0.5
+transform-gizmo-bevy = "0.5"
 
 [patch.crates-io]
 transform-gizmo-bevy = { git = "https://github.com/ActuallyHappening/transform-gizmo" }
